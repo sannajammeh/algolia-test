@@ -11,7 +11,7 @@ interface UseInstantSearchProps {
 
 interface UseInstantSearchResult<T> {
   refCallback: (el: HTMLInputElement | null) => (() => void) | undefined;
-  results: Hit<T>[]; // Replace 'any' with a more specific type based on your Algolia index structure
+  results: Hit<T>[];
 }
 
 export const useInstantSearch = <T>({
