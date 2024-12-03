@@ -1,10 +1,4 @@
-import {
-  useRef,
-  useState,
-  useEffect,
-  startTransition,
-  useCallback,
-} from "react";
+import { useState, startTransition, useCallback } from "react";
 import instantsearch, { SearchClient } from "instantsearch.js";
 import { connectSearchBox } from "instantsearch.js/es/connectors";
 import { connectHits } from "instantsearch.js/es/connectors";
