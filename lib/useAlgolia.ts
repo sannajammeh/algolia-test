@@ -14,7 +14,8 @@ interface UseInstantSearchResult<T> {
   results: Hit<T>[];
 }
 
-export const useInstantSearch = <T>({
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
+export const useInstantSearch = <T = {}>({
   searchClient,
   indexName,
 }: UseInstantSearchProps): UseInstantSearchResult<T> => {
